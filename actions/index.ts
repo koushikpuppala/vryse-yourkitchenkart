@@ -21,6 +21,7 @@ export const linkChecker = async (prevState: any, formData: FormData) => {
 				'Content-Type': 'text/html',
 			},
 		})
+		console.log(response)
 		const html = await response.text()
 
 		const regex = new RegExp(/<a [^>]*href=['"]([^'"]+)['"][^>]*>/g)
