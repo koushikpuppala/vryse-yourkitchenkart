@@ -24,12 +24,12 @@ const HomePage = () => {
 			</h1>
 			<p className='mt-1.5 text-sm text-gray-500'>Internship first round short assignment</p>
 
-			<form action={formAction} className='mx-auto mb-0 mt-8 max-w-md'>
-				<div className='flex flex-col space-y-4'>
+			<form action={formAction} className='mx-auto mb-0 mt-8'>
+				<div className='flex flex-col space-y-4 items-center'>
 					<input
 						name='url'
-						className='w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm dark:bg-gray-800 dark:border-gray-700 dark:text-gray-50'
-						placeholder='Enter URL'
+						className='max-w-md w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm dark:bg-gray-800 dark:border-gray-700 dark:text-gray-50'
+						placeholder='Enter URL or Domain Name'
 					/>
 					<SubmitButtonComponent />
 				</div>

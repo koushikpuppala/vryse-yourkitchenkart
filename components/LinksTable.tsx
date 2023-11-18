@@ -34,10 +34,10 @@ const LinksTableComponent = ({
 	return (
 		<>
 			{links ? (
-				<div className='flex flex-col rounded-lg border border-gray-200 mt-8 overflow-hidden'>
+				<div className='flex flex-col mt-8 max-w-fit mx-auto space-y-2'>
 					{links.map((link) => (
 						<Link
-							className='odd:bg-gray-50 whitespace-nowrap px-4 py-2 font-medium text-gray-900 dark:text-gray-100 dark:odd:bg-gray-800'
+							className='overflow-auto rounded-lg border border-gray-500 px-4 py-2 font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700'
 							target='_blank'
 							href={link}
 							key={link}

@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
 	--foreground-rgb: 0, 0, 0;
 	--background-start-rgb: 214, 219, 220;
@@ -13,6 +14,28 @@
 		--foreground-rgb: 255, 255, 255;
 		--background-start-rgb: 0, 0, 0;
 		--background-end-rgb: 0, 0, 0;
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	:root {
+		scroll-behavior: smooth;
+	}
+
+	::-webkit-scrollbar {
+		width: 2.5px;
+		height: 2.5px;
+		border-radius: 1.25px;
+	}
+
+	::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.0);
+		border-radius: 2.5px;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: rgba(var(--foreground-rgb), 0.5);
+		border-radius: 2.5px;
 	}
 }
 
