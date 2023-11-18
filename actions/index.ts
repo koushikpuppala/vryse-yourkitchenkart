@@ -37,8 +37,8 @@ export const linkChecker = async (prevState: any, formData: FormData) => {
 
 			if (link.startsWith('/')) link = link.replace('/', '')
 
-			if (!link.startsWith('http')) links.push(`${url}/${link}`)
-			else links.push(link)
+			if (!link.startsWith('http')) links.push(`${url}/${link}`.toLocaleLowerCase())
+			else links.push(link.toLocaleLowerCase())
 		}
 
 		const filteredLinks = links.filter((link, index) => links.indexOf(link) === index)
