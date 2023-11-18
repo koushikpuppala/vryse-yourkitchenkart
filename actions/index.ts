@@ -1,22 +1,22 @@
 'use server'
 
 export const linkChecker = async (prevState: any, formData: FormData) => {
-	let url = formData.get('url')
+	let url = formData.get('url')?.toString().toLocaleLowerCase()
 	if (!url)
 		return {
 			links: null,
 			message: 'No URL provided',
 		}
 
-	if (!url.toString().startsWith('http')) url = 'https://' + url
+	if (!url.startsWith('http')) url = 'https://' + url
 
-	if (url.toString().endsWith('/')) url = url.toString().slice(0, -1)
+	if (url.endsWith('/')) url = url.slice(0, -1)
 
 	const links: string[] = []
 	const invalidLinks: string[] = []
 
 	try {
-		const response = await fetch(url.toString(), {
+		const response = await fetch(url, {
 			headers: {
 				'Content-Type': 'text/html',
 			},
