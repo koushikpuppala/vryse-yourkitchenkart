@@ -1,5 +1,7 @@
 'use server'
 
+export const maxDuration = 60 * 5 // 5 minutes
+
 export const linkChecker = async (prevState: any, formData: FormData) => {
 	let url = formData.get('url')
 	if (!url)
