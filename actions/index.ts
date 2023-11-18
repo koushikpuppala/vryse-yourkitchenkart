@@ -10,12 +10,16 @@ export const linkChecker = async (prevState: any, formData: FormData) => {
 
 	if (!url.toString().startsWith('http')) url = 'https://' + url
 
+	if (url.toString().endsWith('/')) url = url.toString().slice(0, -1)
+
 	const links: string[] = []
 	const invalidLinks: string[] = []
 
 	try {
 		const response = await fetch(url.toString(), {
-			cache: 'no-cache',
+			headers: {
+				'Content-Type': 'text/html',
+			},
 		})
 		const html = await response.text()
 
