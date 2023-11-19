@@ -10,7 +10,7 @@ const SubmitButtonComponent = () => {
 			aria-disabled={pending}
 			disabled={pending}
 			type='submit'
-			className={`inline-block rounded-lg px-5 py-3 text-sm font-medium ${
+			className={`inline-block rounded-lg px-5 py-2 text-sm font-medium ${
 				pending ? 'bg-blue-200 text-gray-500' : 'bg-blue-500 text-white'
 			}`}>
 			{pending ? 'Checking...' : 'Check'}
