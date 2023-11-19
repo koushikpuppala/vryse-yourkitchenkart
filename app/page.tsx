@@ -39,10 +39,17 @@ const HomePage = () => {
 				Created by {}
 				<Link
 					href='https://koushikpuppala.com'
+					target='_blank'
 					className='text-gray-700 transition hover:text-gray-700/75 dark:text-gray-400 dark:hover:text-gray-400/75'>
 					Koushikpuppala
 				</Link>
-				.
+				. Open sourced on {}
+				<Link
+					href='https://koushikpuppala.com/github/vryse-yourkitchenkart'
+					target='_blank'
+					className='text-gray-700 transition hover:text-gray-700/75 dark:text-gray-400 dark:hover:text-gray-400/75'>
+					GitHub
+				</Link>
 			</p>
 		</div>
 	)
