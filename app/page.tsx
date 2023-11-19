@@ -53,7 +53,6 @@ const HomePage = () => {
 				. For onClick event method {}
 				<Link
 					href='/vercel'
-					target='_blank'
 					className='text-gray-700 transition hover:text-gray-700/75 dark:text-gray-400 dark:hover:text-gray-400/75'>
 					Click Here
 				</Link>
