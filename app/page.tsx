@@ -13,8 +13,6 @@ const initialState: {
 	message: null,
 }
 
-export const maxDuration = 60 * 5 // 5 minutes
-
 const HomePage = () => {
 	const [state, formAction] = useFormState(linkChecker, initialState)
 
