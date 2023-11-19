@@ -19,7 +19,7 @@ const HomePage = () => {
 	return (
 		<div className='mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 text-center min-h-screen'>
 			<h1 className='text-2xl font-bold text-gray-900 dark:text-gray-50 sm:text-3xl'>
-				Broken Links Checker 🎉
+				Broken Links Checker (formActions method) 🎉
 			</h1>
 			<p className='mt-1.5 text-sm text-gray-500'>Internship first round short assignment</p>
 
@@ -50,6 +50,14 @@ const HomePage = () => {
 					className='text-gray-700 transition hover:text-gray-700/75 dark:text-gray-400 dark:hover:text-gray-400/75'>
 					GitHub
 				</Link>
+				. For onClick event method {}
+				<Link
+					href='/vercel'
+					target='_blank'
+					className='text-gray-700 transition hover:text-gray-700/75 dark:text-gray-400 dark:hover:text-gray-400/75'>
+					Click Here
+				</Link>
+				.
 			</p>
 		</div>
 	)
